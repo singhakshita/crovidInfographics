@@ -1,5 +1,5 @@
 class HospitalView {
-  displayCard = function (data) {
+  displayCard(data) {
     document.querySelector(".main-body-details").textContent = "";
     const html = `<div class="main-body-card">
             <div class="card-data">🇮🇳${data.state}</div>
@@ -14,6 +14,6 @@ class HospitalView {
     document
       .querySelector(".main-body-details")
       .insertAdjacentHTML("afterbegin", html);
-  };
+  }
 }
 export default HospitalView = new HospitalView();

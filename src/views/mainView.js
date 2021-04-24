@@ -8,7 +8,7 @@ class mainView {
         searchHandler(searchdata);
       });
   }
-  displayCard = function (data) {
+  displayCard(data) {
     document.querySelector(".main-body-details").textContent = "";
     const html = `<div class="main-body-card">
         <div class="card-data">🇮🇳${data.loc}</div>
@@ -22,7 +22,7 @@ class mainView {
     document
       .querySelector(".main-body-details")
       .insertAdjacentHTML("afterbegin", html);
-  };
+  }
 }
 
 export default new mainView();

@@ -1,5 +1,5 @@
 class SearchView {
-  displaySearchArr = function (arr, params, type) {
+  displaySearchArr(arr, params, type) {
     let html = "";
     document.querySelector(".main-side__panel").textContent = "";
     arr.forEach((element, idx) => {
@@ -24,7 +24,7 @@ class SearchView {
         .querySelector(".main-side__panel")
         .insertAdjacentHTML("beforeend", html);
     });
-  };
+  }
   searchCardClickhandler(handler) {
     document
       .querySelector(".main-side__panel")

@@ -1,5 +1,5 @@
 class ContactViews {
-  displayCard = function (data) {
+  displayCard(data) {
     document.querySelector(".main-body-details").textContent = "";
     const html = `<div class="main-body-card">
             <div class="card-data">🇮🇳${data.currentHelpline.loc}</div>
@@ -13,7 +13,7 @@ class ContactViews {
     document
       .querySelector(".main-body-details")
       .insertAdjacentHTML("afterbegin", html);
-  };
+  }
 
   intialContent(data) {
     document.querySelector(".main-body-details").textContent = "";
