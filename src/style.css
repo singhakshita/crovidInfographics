@@ -1,0 +1,262 @@
+*body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: 500px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header-img {
+  width: 100vw;
+  height: 100%;
+}
+.header-heading {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+.menu {
+  height: 40px;
+  display: flex;
+  background-color: rgb(247, 166, 200);
+  padding: 10px;
+  color: rgb(34, 27, 61);
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.menu-item {
+  height: 100%;
+
+  text-transform: uppercase;
+}
+.menu-item:hover {
+  background-color: aqua;
+}
+.clicked {
+  background-color: rgb(216, 238, 238);
+}
+
+.main-area {
+  position: relative;
+  text-align: center;
+}
+.main-search {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: 50%;
+  height: 40px;
+}
+.main-area-search-btn {
+  display: block;
+  border-radius: 100px;
+  background-color: rgb(63, 3, 36);
+  color: #fff;
+  transform: translatex(-150px);
+  width: 150px;
+}
+
+.main-input-area {
+  border-radius: 100px;
+  width: 300px;
+  background-color: rgb(245, 248, 233);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+  transform: translatex(-150px);
+}
+.main-body {
+  position: relative;
+  top: 100px;
+  height: 700px;
+  display: block;
+  display: flex;
+  background: linear-gradient(
+    to right,
+    #8dc26f,
+    #76b852
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main-side__panel {
+  display: block;
+  width: 30%;
+  border: 1px solid;
+  /* margin-right: 30px; */
+  /* background-image: linear-gradient(to right top, #614385, #516395); */
+
+  background-image: linear-gradient(to right top, #ffafbd, #ffc3a0);
+  text-align: center;
+  overflow: scroll;
+}
+.main-body-details {
+  position: relative;
+  width: 35%;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(to right top, #614385, #516395);
+}
+.main-body-card {
+  padding-top: 200px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  height: 500px;
+  border: 2px;
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  right: 5px;
+  border-radius: 100px;
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(146, 79, 105, 0.842),
+      rgba(160, 175, 241, 0.877)
+    ),
+    url(./assets/coronaCard.jpeg); */
+}
+.card-data {
+  padding: 8px;
+}
+
+.updates {
+  border: 1px solid;
+  width: 40%;
+  background-color: aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  overflow: scroll;
+}
+.searchCard {
+  padding-top: 10px;
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  height: 70px;
+
+  /* background-image: linear-gradient(to right top, #2193b0, #6dd5ed); */
+  background-image: linear-gradient(to right top, #ddd6f3, #faaca8);
+  border: 1px #faaca8;
+}
+.notification-card {
+  background-image: linear-gradient(to right top, #fdfcfb, #e2d1c3);
+  padding: 8px;
+}
+.notification-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.notification-link {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+.before-display {
+  position: absolute;
+  top: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.pad-added {
+  padding-left: 100px;
+  padding-top: 100px;
+}

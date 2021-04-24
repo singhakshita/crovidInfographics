@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./src/controller.js"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header-img"
+        src="https://cdn.mos.cms.futurecdn.net/qHWAzx7UnU82TehtWTNdKM-480-80.jpg"
+      />
+      <h1 class="header-heading">Covid-19 Infographics</h1>
+    </header>
+    <div class="menu">
+      <div class="menu-item clicked" data-menu="0">case counts</div>
+      <div class="menu-item" data-menu="1">testing statistics</div>
+      <div class="menu-item" data-menu="2">Hospitals And Beds</div>
+      <div class="menu-item" data-menu="3">Contacts And Helpline</div>
+      <!-- <div class="menu-item" data-menu="4">Notification And Adviseries</div> -->
+    </div>
+    <main class="main-area">
+      <div class="main-search">
+        <input
+          type="text"
+          placeholder="name of state"
+          class="main-input-area"
+        />
+        <button class="main-area-search-btn">Search</button>
+      </div>
+      <div class="main-body">
+        <div class="main-side__panel">
+          <!-- <div class="searchCard">
+            <div>State Name</div>
+            <div>🏴‍☠️ 🌡 🦠 ☠️</div>
+          </div> -->
+        </div>
+        <div class="main-body-details"></div>
+        <div class="updates">
+          Notification And Adviseries
+          <!-- <div class="notification-card">
+            <div class="notification-title">title</div>
+            <div class="notification-link"><a href="link">Link</a></div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
